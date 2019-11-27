@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ButtonScript : MonoBehaviour
 {
+    public GameObject parameterObject;
     ParamLogic paramLogic;
     SpriteRenderer spriteRenderer;
     float fadeScale, fadeSpeed, fadeScaleValue, scaleSpeed, scaleTime, maxScaleValue, positionValueX, positionValueZ;
-    bool currentlyActive;
     string parameterType;
     private Vector3 screenPoint, offset, minScale, maxScale;
 
@@ -25,12 +25,12 @@ public class ButtonScript : MonoBehaviour
 
     void SetValues()
     {
-        paramLogic = gameObject.GetComponentInParent<ParamLogic>();
+        paramLogic = parameterObject.GetComponentInParent<ParamLogic>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         fadeScale = paramLogic.fadeScale;
         parameterType = paramLogic.parameterType;
         spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
-        fadeSpeed = 0.1f;
+        fadeSpeed = 0.025f;
         scaleSpeed = 2f;
         scaleTime = 1f;
         minScale = new Vector3(6, 6, 1);
@@ -63,14 +63,13 @@ public class ButtonScript : MonoBehaviour
 
     void ActiveSwitch()
     {
-        currentlyActive = paramLogic.currentlyActive;
-        if (currentlyActive)
+        if (paramLogic.currentlyActive)
         {
-            StartCoroutine(ButtonFadeIn(0.1f));
+            StartCoroutine(ButtonFadeIn(1f));
         }
-        else if(!currentlyActive)
+        else if(!paramLogic.currentlyActive)
         {
-            StartCoroutine(ButtonFadeOut(0.1f));
+            StartCoroutine(ButtonFadeOut(1f));
         }
     }
 
@@ -83,7 +82,7 @@ public class ButtonScript : MonoBehaviour
             fadeScale += fadeSpeed;
             if(fadeScale >= 1)
             {
-                StopCoroutine(ButtonFadeIn(0.01f));
+                StopCoroutine(ButtonFadeIn(1f));
             }
             yield return new WaitForSeconds(fadeTime);
         }
@@ -97,7 +96,7 @@ public class ButtonScript : MonoBehaviour
             fadeScale -= fadeSpeed;
             if (fadeScale <= 0)
             {
-                StopCoroutine(ButtonFadeOut(0.1f));
+                StopCoroutine(ButtonFadeOut(1f));
             }
             yield return new WaitForSeconds(fadeTime);
         }
@@ -109,8 +108,6 @@ public class ButtonScript : MonoBehaviour
         {
             yield return ResizeScale(minScale, maxScale, scaleTime);
             yield return ResizeScale(maxScale, minScale, scaleTime);
-
-            //lerp down scale
         }
     } 
 

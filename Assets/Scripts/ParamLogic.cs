@@ -8,8 +8,8 @@ public class ParamLogic : MonoBehaviour
     public string parameterType;
     string activeParameter;
     public bool currentlyActive;
-    public float fadeScale, fadeSpeed, positionValueX, positionValueZ;
-    float parameterX, parameterZ, lengthX, lengthZ, clampUp, clampDown, clampLeft, clampRight;
+    public float fadeScale, fadeSpeed, positionValueX, positionValueZ, parameterX, parameterZ;
+    float lengthX, lengthZ, clampUp, clampDown, clampLeft, clampRight;
     private Vector3 screenPoint, offset, startMarkerX, endMarkerX, startMarkerZ, endMarkerZ, positionCalculatorX, positionCalculatorZ;
 
 
@@ -20,6 +20,7 @@ public class ParamLogic : MonoBehaviour
 
     void Update()
     {
+        ActiveCheck();
         CheckParameters();
     }
 
@@ -87,5 +88,17 @@ public class ParamLogic : MonoBehaviour
         positionCalculatorZ = new Vector3(00, 05, (gameObject.transform.position.z));
         positionValueZ = Vector3.Distance(positionCalculatorZ, startMarkerZ);
         parameterZ = ((positionValueZ / lengthZ) * 10);
+    }
+
+    void ActiveCheck()
+    {
+        if(parameterType == gameLogic.activeParameter)
+        {
+            currentlyActive = true;
+        }
+        else
+        {
+            currentlyActive = false;
+        }
     }
 }

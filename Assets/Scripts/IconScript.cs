@@ -7,7 +7,6 @@ public class IconScript : MonoBehaviour
     ParamLogic paramLogic;
 
     //Active parameter settings
-    bool currentlyActive;
     SpriteRenderer spriteRenderer;
     float fadeScale, fadeSpeed;
 
@@ -30,21 +29,19 @@ public class IconScript : MonoBehaviour
         //Active Parameter values
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
-        currentlyActive = false;
         fadeScale = paramLogic.fadeScale;
-        fadeSpeed = 0.1f;
+        fadeSpeed = 0.025f;
     }
 
     void ActiveSwitch()
     {
-        currentlyActive = paramLogic.currentlyActive;
-        if (currentlyActive)
+        if (paramLogic.currentlyActive)
         {
-            StartCoroutine(Activation(0.1f));
+            StartCoroutine(Activation(1f));
         }
-        else if (!currentlyActive)
+        else if (!paramLogic.currentlyActive)
         {
-            StartCoroutine(Deactivation(0.1f));
+            StartCoroutine(Deactivation(1f));
         }
     }
 
@@ -56,7 +53,7 @@ public class IconScript : MonoBehaviour
             fadeScale += fadeSpeed;
             if (fadeScale >= 1)
             {
-                StopCoroutine(Activation(0.01f));
+                StopCoroutine(Activation(1f));
             }
             yield return new WaitForSeconds(fadeTime);
         }
@@ -70,7 +67,7 @@ public class IconScript : MonoBehaviour
             fadeScale -= fadeSpeed;
             if (fadeScale <= 0)
             {
-                StopCoroutine(Deactivation(0.1f));
+                StopCoroutine(Deactivation(1f));
             }
             yield return new WaitForSeconds(fadeTime);
         }
