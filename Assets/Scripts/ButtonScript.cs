@@ -5,11 +5,9 @@ using UnityEngine;
 public class ButtonScript : MonoBehaviour
 {
     public GameObject parameterObject;
-    ParamLogic paramLogic;
-    SpriteRenderer spriteRenderer;
+    ControlLogic controlLogic;
     float fadeScale, fadeSpeed, fadeScaleValue, scaleSpeed, scaleTime, maxScaleValue, positionValueX, positionValueZ;
-    string parameterType;
-    private Vector3 screenPoint, offset, minScale, maxScale;
+    private Vector3 minScale, maxScale;
 
     void Start()
     {
@@ -18,18 +16,12 @@ public class ButtonScript : MonoBehaviour
 
     void Update()
     {
-        CheckParameters();
         RotateAndResize();
-        ActiveSwitch();
     }
 
     void SetValues()
     {
-        paramLogic = parameterObject.GetComponentInParent<ParamLogic>();
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        fadeScale = paramLogic.fadeScale;
-        parameterType = paramLogic.parameterType;
-        spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
+        controlLogic = parameterObject.GetComponentInParent<ControlLogic>();
         fadeSpeed = 0.025f;
         scaleSpeed = 2f;
         scaleTime = 1f;
@@ -38,73 +30,21 @@ public class ButtonScript : MonoBehaviour
 
     void RotateAndResize()
     {
-        if (fadeScale > 0)
+        if (controlLogic.currentlyActive && controlLogic.fadeScale > 0)
         {
-            //Scaling
-            fadeScaleValue = (positionValueX * fadeScale * 10f);
-            transform.Rotate(fadeScaleValue * Vector3.back * Time.deltaTime);
+            //Rotating
+            transform.Rotate((controlLogic.densityParameter * controlLogic.fadeScale * 50) * Vector3.back * Time.deltaTime);
 
             //Resizing
-            maxScaleValue = (positionValueZ /100 * 4 + 6);
+            maxScaleValue = (controlLogic.volumeParameter /10 * 4 + 6);
             maxScale = new Vector3(maxScaleValue, maxScaleValue, 1);
             StartCoroutine(ButtonResize());
         }
     }
 
-    void CheckParameters()
-    {
-        if (fadeScale > 0)
-        {
-            //Update Parmeters from ParamLogic
-            positionValueX = paramLogic.positionValueX;
-            positionValueZ = paramLogic.positionValueZ;
-        }
-    }
-
-    void ActiveSwitch()
-    {
-        if (paramLogic.currentlyActive)
-        {
-            StartCoroutine(ButtonFadeIn(1f));
-        }
-        else if(!paramLogic.currentlyActive)
-        {
-            StartCoroutine(ButtonFadeOut(1f));
-        }
-    }
-
-
-    IEnumerator ButtonFadeIn(float fadeTime)
-    {
-        while(fadeScale < 1)
-        {
-            spriteRenderer.color = new Color(1f, 1f, 1f, fadeScale);
-            fadeScale += fadeSpeed;
-            if(fadeScale >= 1)
-            {
-                StopCoroutine(ButtonFadeIn(1f));
-            }
-            yield return new WaitForSeconds(fadeTime);
-        }
-    }
-
-    IEnumerator ButtonFadeOut(float fadeTime)
-    {
-        while (fadeScale > 0)
-        {
-            spriteRenderer.color = new Color(1f, 1f, 1f, fadeScale);
-            fadeScale -= fadeSpeed;
-            if (fadeScale <= 0)
-            {
-                StopCoroutine(ButtonFadeOut(1f));
-            }
-            yield return new WaitForSeconds(fadeTime);
-        }
-    }
-
     IEnumerator ButtonResize()
     {
-        while (fadeScale > 0)
+        while (controlLogic.fadeScale > 0)
         {
             yield return ResizeScale(minScale, maxScale, scaleTime);
             yield return ResizeScale(maxScale, minScale, scaleTime);
