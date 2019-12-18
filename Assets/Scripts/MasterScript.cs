@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class MasterScript : MonoBehaviour
 {
-    public GameObject gameController;
-    public GameObject[] paramObjects = new GameObject[8];
-    ParamLogic[] paramData = new ParamLogic[8];
+    public GameObject gameController, parameterMenu;
     GameLogic gameLogic;
     public string parameterType;
     public float masterParameterX, masterParameterZ, masterPositionValueX, masterPositionValueZ;

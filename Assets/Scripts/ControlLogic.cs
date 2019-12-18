@@ -1,41 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ControlLogic : MonoBehaviour
 {
-    public string parameterType;
-    public GameObject volumeUp, volumeDown, densityUp, densityDown;
-    public GameObject[] volumeLevel = new GameObject[10];
-    public GameObject[] densityLevel = new GameObject[10];
-    SpriteRenderer[] childSprites;
-    SpriteRenderer spriteRenderer;
-    GameLogic gameLogic;
+    public string parameterType, parameterName;
+    public Button volumeUp, volumeDown, densityUp, densityDown;
+    public GameObject nameObject, volumeObject, densityObject;
+    TextMeshProUGUI nameText, volumeText, densityText;
+    MasterControlScript masterControlScript;
     CanvasGroup canvasGroup;
     public float fadeScale, fadeSpeed, volumeParameter, densityParameter;
     public bool currentlyActive;
+    public int listPosition;
     string activeParameter;
+    int paramTotal;
 
     // Start is called before the first frame update
     void Start()
     {
         SetValues();
-        GatherChildren();
-        ChildFadeScale();
     }
 
     // Update is called once per frame
     void Update()
     {
         ActiveCheck();
-        ActiveSwitch();
     }
 
     void SetValues()
     {
-        gameLogic = FindObjectOfType<GameLogic>();
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        masterControlScript = FindObjectOfType<MasterControlScript>();
         currentlyActive = false;
+
+        volumeUp.onClick.AddListener(IncreaseVolume);
+        volumeDown.onClick.AddListener(DecreaseVolume);
+        densityUp.onClick.AddListener(IncreaseDensity);
+        densityDown.onClick.AddListener(DecreaseDensity);
+
+        nameText = nameObject.GetComponent<TextMeshProUGUI>();
+        volumeText = volumeObject.GetComponent<TextMeshProUGUI>();
+        densityText = densityObject.GetComponent<TextMeshProUGUI>();
 
         volumeParameter = 0;
         densityParameter = 0;
@@ -48,72 +55,127 @@ public class ControlLogic : MonoBehaviour
 
     void ActiveCheck()
     {
-        if (parameterType == gameLogic.activeParameter)
+        if (parameterType == null) /*== masterControlScript.activeParameter*/
         {
-            currentlyActive = true;
+            volumeUp.interactable = true;
+            volumeDown.interactable = true;
+            densityUp.interactable = true;
+            densityDown.interactable = true;
         }
         else
         {
-            currentlyActive = false;
+            volumeUp.interactable = false;
+            volumeDown.interactable = false;
+            densityUp.interactable = false;
+            densityDown.interactable = false;
         }
     }
 
-    void ActiveSwitch()
+    void IncreaseVolume()
     {
-        if (currentlyActive)
+        volumeParameter = Mathf.Clamp((volumeParameter += 1), 0f, 10f);
+        volumeText.text = (volumeParameter * 10) + "%";
+        switch (parameterType)
         {
-            StartCoroutine(Activation(1f));
-        }
-        else if (!currentlyActive)
-        {
-            StartCoroutine(Deactivation(1f));
-        }
-    }
-
-    IEnumerator Activation(float fadeTime)
-    {
-        while (fadeScale < 1)
-        {
-            ChildFadeScale();
-            fadeScale += fadeSpeed;
-
-            if (fadeScale >= 1)
-            {
-                StopCoroutine(Activation(1f));
-            }
-            yield return new WaitForSeconds(fadeTime);
-        }
-    }
-
-    IEnumerator Deactivation(float fadeTime)
-    {
-        while (fadeScale > 1)
-        {
-            ChildFadeScale();
-            fadeScale -= fadeSpeed;
-            if (fadeScale <= 0)
-            {
-                StopCoroutine(Deactivation(1f));
-            }
-            yield return new WaitForSeconds(fadeTime);
+            case "Music":
+                masterControlScript.musicVolumeList[listPosition] = volumeParameter;
+                paramTotal = 0;
+                for(int i = 0; i < masterControlScript.musicVolumeList.Length; i++)
+                {
+                    paramTotal += (int)masterControlScript.musicVolumeList[i];
+                }
+                masterControlScript.masterMusicVolume = (paramTotal / masterControlScript.musicVolumeList.Length);
+                break;
+            case "Ambient":
+                masterControlScript.ambientVolumeList[listPosition] = volumeParameter;
+                paramTotal = 0;
+                for (int i = 0; i < masterControlScript.ambientVolumeList.Length; i++)
+                {
+                    paramTotal += (int)masterControlScript.ambientVolumeList[i];
+                }
+                masterControlScript.masterAmbientVolume = (paramTotal / masterControlScript.ambientVolumeList.Length);
+                break;
         }
     }
 
-    void GatherChildren()
+    void DecreaseVolume()
     {
-        childSprites = new SpriteRenderer[transform.childCount];
-        for (int childIndex = 0; childIndex < transform.childCount; childIndex++)
+        volumeParameter = Mathf.Clamp((volumeParameter -= 1), 0f, 10f);
+        volumeText.text = (volumeParameter * 10) + "%";
+        switch (parameterType)
         {
-            Transform child = gameObject.transform.GetChild(childIndex);
-            childSprites[childIndex] = child.gameObject.GetComponent<SpriteRenderer>();
+            case "Music":
+                masterControlScript.musicVolumeList[listPosition] = volumeParameter;
+                paramTotal = 0;
+                for (int i = 0; i < masterControlScript.musicVolumeList.Length; i++)
+                {
+                    paramTotal += (int)masterControlScript.musicVolumeList[i];
+                }
+                masterControlScript.masterMusicVolume = (paramTotal / masterControlScript.musicVolumeList.Length);
+                break;
+            case "Ambient":
+                masterControlScript.ambientVolumeList[listPosition] = volumeParameter;
+                paramTotal = 0;
+                for (int i = 0; i < masterControlScript.ambientVolumeList.Length; i++)
+                {
+                    paramTotal += (int)masterControlScript.ambientVolumeList[i];
+                }
+                masterControlScript.masterAmbientVolume = (paramTotal / masterControlScript.ambientVolumeList.Length);
+                break;
         }
     }
 
-    void ChildFadeScale()
+    void IncreaseDensity()
     {
-        foreach (SpriteRenderer childRenderer in childSprites)
+        densityParameter = Mathf.Clamp((densityParameter += 1), 0f, 10f);
+        densityText.text = (densityParameter * 10) + "%";
+        switch (parameterType)
         {
-            childRenderer.color = new Color(1f, 1f, 1f, fadeScale);
+            case "Music":
+                masterControlScript.musicDensityList[listPosition] = densityParameter;
+                paramTotal = 0;
+                for (int i = 0; i < masterControlScript.musicDensityList.Length; i++)
+                {
+                    paramTotal += (int)masterControlScript.musicDensityList[i];
+                }
+                masterControlScript.masterMusicDensity = (paramTotal / masterControlScript.musicDensityList.Length);
+                break;
+            case "Ambient":
+                masterControlScript.ambientDensityList[listPosition] = densityParameter;
+                paramTotal = 0;
+                for (int i = 0; i < masterControlScript.ambientDensityList.Length; i++)
+                {
+                    paramTotal += (int)masterControlScript.ambientDensityList[i];
+                }
+                masterControlScript.masterAmbientDensity = (paramTotal / masterControlScript.ambientDensityList.Length);
+                break;
+        }
+    }
+
+    void DecreaseDensity()
+    {
+        densityParameter = Mathf.Clamp((densityParameter -= 1), 0f, 10f);
+        densityText.text = (densityParameter * 10) + "%";
+        switch (parameterType)
+        {
+            case "Music":
+                masterControlScript.musicDensityList[listPosition] = densityParameter;
+                paramTotal = 0;
+                for (int i = 0; i < masterControlScript.musicDensityList.Length; i++)
+                {
+                    paramTotal += (int)masterControlScript.musicDensityList[i];
+                }
+                masterControlScript.masterMusicDensity = (paramTotal / masterControlScript.musicDensityList.Length);
+                break;
+            case "Ambient":
+                masterControlScript.ambientDensityList[listPosition] = densityParameter;
+                paramTotal = 0;
+                for (int i = 0; i < masterControlScript.ambientDensityList.Length; i++)
+                {
+                    paramTotal += (int)masterControlScript.ambientDensityList[i];
+                }
+                masterControlScript.masterAmbientDensity = (paramTotal / masterControlScript.ambientDensityList.Length);
+                break;
         }
     }
 }
