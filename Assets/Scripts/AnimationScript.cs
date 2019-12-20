@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class AnimationScript : MonoBehaviour
 {
-    public GameObject parameterObject;
+    public GameObject parameterObject, canvasObject;
+    CanvasGroup menuCanvas;
     RectTransform rectTransform;
     ControlLogic controlLogic;
     MasterControlScript masterControlScript;
-    float scaleSpeed, scaleTime, maxScaleValue;
+    float scaleSpeed, scaleTime, maxScaleValue, minScaleX, minScaleY, minScaleZ;
     private Vector3 minScale, maxScale;
-    public string primaryDesignation, secondaryDesignation;
-    bool playBack;
+    public string playBackType;
 
     void Start()
     {
@@ -22,7 +22,6 @@ public class AnimationScript : MonoBehaviour
     void Update()
     {
         RotateAndResize();
-        ParamCheck();
     }
 
     void SetValues()
@@ -30,37 +29,29 @@ public class AnimationScript : MonoBehaviour
         masterControlScript = FindObjectOfType<MasterControlScript>();
         controlLogic = parameterObject.GetComponent<ControlLogic>();
         rectTransform = GetComponent<RectTransform>();
+        menuCanvas = canvasObject.GetComponent<CanvasGroup>();
         scaleSpeed = 2f;
         scaleTime = 1f;
-        minScale = new Vector3(1, 1, 1);
-        playBack = false;
-    }
-
-    void ParamCheck()
-    {
-        playBack = masterControlScript.playBack;
+        minScaleX = rectTransform.localScale.x;
+        minScaleY = rectTransform.localScale.y;
+        minScaleZ = rectTransform.localScale.z;
+        minScale = new Vector3(minScaleX, minScaleY, minScaleZ);
     }
 
     void RotateAndResize()
     {
-        switch (primaryDesignation)
+        switch (gameObject.tag)
         {
-            case "Music Menu":
-                if(playBack)
-                {
-                    MenuAnimate();
-                }
+            case "Music":
+                MenuAnimate();
                 break;
-            case "Ambient Menu":
-                if (playBack)
-                {
-                    MenuAnimate();
-                }
+            case "Ambient":
+                MenuAnimate();
                 break;
-            case "Master Switch":
-
+            case "Master":
+                MasterAnimate();
                 break;
-            case "Playback":
+            case "Menu":
                 PlayBackAnimate();
                 break;
         }
@@ -68,37 +59,41 @@ public class AnimationScript : MonoBehaviour
 
     void MenuAnimate()
     {
-        if (controlLogic.currentlyActive && controlLogic.fadeScale > 0)
+        if (masterControlScript.playBack && menuCanvas.alpha > 0)
         {
             //Rotating
-            rectTransform.Rotate((controlLogic.densityParameter * controlLogic.fadeScale * 50) * Vector3.back * Time.deltaTime);
+            rectTransform.Rotate((controlLogic.densityParameter * menuCanvas.alpha * 50) * Vector3.back * Time.deltaTime);
 
             //Resizing
-            maxScaleValue = ((controlLogic.volumeParameter / 20) + 1);
-            maxScale = new Vector3(maxScaleValue, maxScaleValue, 1);
+            maxScaleValue = ((controlLogic.volumeParameter / 20) + minScaleX);
+            maxScale = new Vector3(maxScaleValue, maxScaleValue, minScaleZ);
             StartCoroutine(ButtonResize());
+        }
+        else
+        {
+            StopCoroutine(ButtonResize());
         }
     }
 
     void MasterAnimate()
     {
-        if(secondaryDesignation == "Music Master")
+        if(playBackType == "Music")
         {
             //Rotation
-            rectTransform.Rotate(masterControlScript.masterMusicDensity * Vector3.back * Time.deltaTime);
+            rectTransform.Rotate(masterControlScript.masterMusicDensity * 5 * Vector3.back * Time.deltaTime);
 
             //Resizing
-            maxScaleValue = ((masterControlScript.masterMusicVolume / 20) + 1);
+            maxScaleValue = ((masterControlScript.masterMusicVolume / 10) + minScaleX);
             maxScale = new Vector3(maxScaleValue, maxScaleValue, 1);
             StartCoroutine(ButtonResize());
         }
-        else if(secondaryDesignation == "Ambient Master")
+        else if(playBackType == "Ambient")
         {
             //Rotation
-            rectTransform.Rotate(masterControlScript.masterAmbientDensity * Vector3.back * Time.deltaTime);
+            rectTransform.Rotate(masterControlScript.masterAmbientDensity * 5 * Vector3.back * Time.deltaTime);
 
             //Resizing
-            maxScaleValue = ((masterControlScript.masterAmbientVolume / 20) + 1);
+            maxScaleValue = ((masterControlScript.masterAmbientVolume / 10) + minScaleX);
             maxScale = new Vector3(maxScaleValue, maxScaleValue, 1);
             StartCoroutine(ButtonResize());
         }
@@ -106,11 +101,11 @@ public class AnimationScript : MonoBehaviour
 
     void PlayBackAnimate()
     {
-        if (playBack && secondaryDesignation == "Play")
+        if (masterControlScript.playBack && playBackType == "Play")
         {
             rectTransform.Rotate(50 * Vector3.back * Time.deltaTime);
         }
-        else if (!playBack && secondaryDesignation == "Stop")
+        else if (!masterControlScript.playBack && playBackType == "Stop")
         {
             rectTransform.Rotate(50 * Vector3.back * Time.deltaTime);
         }
@@ -118,7 +113,7 @@ public class AnimationScript : MonoBehaviour
 
     IEnumerator ButtonResize()
     {
-        while (controlLogic.fadeScale > 0)
+        while (menuCanvas.alpha > 0)
         {
             yield return ResizeScale(minScale, maxScale, scaleTime);
             yield return ResizeScale(maxScale, minScale, scaleTime);

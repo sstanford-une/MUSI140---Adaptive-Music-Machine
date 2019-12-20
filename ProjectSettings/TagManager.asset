@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - MusicText
-  - AmbientText
-  - MenuText
+  - Music
+  - Ambient
+  - Menu
+  - Master
   layers:
   - Default
   - TransparentFX
@@ -16,11 +17,11 @@ TagManager:
   - UI
   - 
   - 
+  - Background
+  - Screen
   - 
-  - 
-  - 
-  - 
-  - 
+  - Animation
+  - Icons
   - 
   - 
   - 
