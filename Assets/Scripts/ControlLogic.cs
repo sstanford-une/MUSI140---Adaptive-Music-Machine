@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using FMOD;
+using FMODUnity;
 
 public class ControlLogic : MonoBehaviour
 {
-    public Button volumeUp, volumeDown, densityUp, densityDown;
+    private FMOD.Studio.EventInstance instance;
+    [FMODUnity.EventRef] public string parameterName;
+    [Range(0f, 10f)] public float volumeParameter, densityParameter;
     public GameObject nameObject, volumeObject, densityObject;
+    public Button volumeUp, volumeDown, densityUp, densityDown, masterStart, masterStop;
     TextMeshProUGUI nameText, volumeText, densityText;
     MasterControlScript masterControlScript;
-    public float volumeParameter, densityParameter;
     int paramTotal;
 
     // Start is called before the first frame update
@@ -33,10 +37,13 @@ public class ControlLogic : MonoBehaviour
         volumeDown.onClick.AddListener(DecreaseVolume);
         densityUp.onClick.AddListener(IncreaseDensity);
         densityDown.onClick.AddListener(DecreaseDensity);
+        masterStart.onClick.AddListener(StartPlayback);
+        masterStop.onClick.AddListener(StopPlayback);
 
         nameText = nameObject.GetComponent<TextMeshProUGUI>();
         volumeText = volumeObject.GetComponent<TextMeshProUGUI>();
         densityText = densityObject.GetComponent<TextMeshProUGUI>();
+        nameText.text = parameterName;
 
         volumeParameter = 0;
         densityParameter = 0;
@@ -46,6 +53,7 @@ public class ControlLogic : MonoBehaviour
     {
         volumeParameter = Mathf.Clamp((volumeParameter += 1), 0f, 10f);
         volumeText.text = (volumeParameter * 10) + "%";
+        instance.setParameterByName("LocalIntensity", volumeParameter);
         switch (gameObject.tag)
         {
             case "Music":
@@ -61,6 +69,7 @@ public class ControlLogic : MonoBehaviour
     {
         volumeParameter = Mathf.Clamp((volumeParameter -= 1), 0f, 10f);
         volumeText.text = (volumeParameter * 10) + "%";
+        instance.setParameterByName("LocalIntensity", volumeParameter);
         switch (gameObject.tag)
         {
             case "Music":
@@ -76,6 +85,7 @@ public class ControlLogic : MonoBehaviour
     {
         densityParameter = Mathf.Clamp((densityParameter += 1), 0f, 10f);
         densityText.text = (densityParameter * 10) + "%";
+        instance.setParameterByName("LocalDensity", volumeParameter);
         switch (gameObject.tag)
         {
             case "Music":
@@ -91,6 +101,7 @@ public class ControlLogic : MonoBehaviour
     {
         densityParameter = Mathf.Clamp((densityParameter -= 1), 0f, 10f);
         densityText.text = (densityParameter * 10) + "%";
+        instance.setParameterByName("LocalDensity", volumeParameter);
         switch (gameObject.tag)
         {
             case "Music":
@@ -100,5 +111,15 @@ public class ControlLogic : MonoBehaviour
                 masterControlScript.masterAmbientDensity -= 1;
                 break;
         }
+    }
+
+    void StartPlayback()
+    {
+        instance.start();
+    }
+
+    void StopPlayback()
+    {
+        //instance.stop();
     }
 }

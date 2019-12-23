@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMOD;
+using FMODUnity;
+
 
 public class MasterControlScript : MonoBehaviour
 {
     public GameObject musicMenu, ambientMenu, musicSwitch, ambientSwitch;
-    GameLogic gameLogic;
     CanvasGroup musicGroup, ambientGroup, fadeInTarget, fadeOutTarget;
     public bool playBack;
     public string disabledParameter;
@@ -34,7 +36,6 @@ public class MasterControlScript : MonoBehaviour
     {
         playBack = false;
         disabledParameter = "None";
-        gameLogic = gameLogic = FindObjectOfType<GameLogic>();
         musicGroup = musicMenu.GetComponent<CanvasGroup>();
         ambientGroup = ambientMenu.GetComponent<CanvasGroup>();
         musicToggle = musicSwitch.GetComponent<Toggle>();
@@ -95,7 +96,7 @@ public class MasterControlScript : MonoBehaviour
                     break;
             }
         }
-        Debug.Log(parameterButtons.Count);
+        UnityEngine.Debug.Log(parameterButtons.Count);
     }
 
     void GatherObjects()

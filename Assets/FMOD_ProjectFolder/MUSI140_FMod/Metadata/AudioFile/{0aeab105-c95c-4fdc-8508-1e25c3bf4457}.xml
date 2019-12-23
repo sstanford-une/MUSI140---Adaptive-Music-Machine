@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{0aeab105-c95c-4fdc-8508-1e25c3bf4457}">
+        <property name="assetPath">
+            <value>Stems/HarmonyExtra(3)/H_PadForPluto_08.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>14.769229166666667</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{3ae6facf-14b1-4490-80e6-e747faad5da8}</destination>
+        </relationship>
+    </object>
+</objects>

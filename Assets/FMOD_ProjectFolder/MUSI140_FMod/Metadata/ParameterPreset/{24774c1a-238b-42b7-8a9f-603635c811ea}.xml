@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{24774c1a-238b-42b7-8a9f-603635c811ea}">
+		<property name="name">
+			<value>LocalDensity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{29c55406-547c-4d6a-8c78-ac5d46b14778}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d67278f5-29b8-42bf-8d6e-a668a30f61ee}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d67278f5-29b8-42bf-8d6e-a668a30f61ee}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>11</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Dense00</value>
+			<value>Dense01</value>
+			<value>Dense02</value>
+			<value>Dense03</value>
+			<value>Dense04</value>
+			<value>Dense05</value>
+			<value>Dense06</value>
+			<value>Dense07</value>
+			<value>Dense08</value>
+			<value>Dense09</value>
+			<value>Dense10</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

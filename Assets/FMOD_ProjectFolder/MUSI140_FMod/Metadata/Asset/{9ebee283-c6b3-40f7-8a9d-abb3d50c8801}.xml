@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{9ebee283-c6b3-40f7-8a9d-abb3d50c8801}">
+        <property name="assetPath">
+            <value>Stems/HarmonyExtra(4)/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{3ae6facf-14b1-4490-80e6-e747faad5da8}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{b5ec7a69-ec2c-4d10-8d96-e6d94de0efa0}">
+        <property name="assetPath">
+            <value>Stems/Perc2/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{3ae6facf-14b1-4490-80e6-e747faad5da8}</destination>
+        </relationship>
+    </object>
+</objects>

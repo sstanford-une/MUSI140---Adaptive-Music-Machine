@@ -1,0 +1,1375 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9141084289990751760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/Bass_Dense
+  m_EditorClassIdentifier: 
+  Name: Bass_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &-8640035585152466023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 2/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &-8175979351520052670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Perc1_Int
+  m_EditorClassIdentifier: 
+  Name: Perc1_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &-8018400011737150110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/Harmony_Dense
+  m_EditorClassIdentifier: 
+  Name: Harmony_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &-7689310505482754612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Perc2
+  m_EditorClassIdentifier: 
+  Path: event:/Perc2
+  guid: c9546dfc76243247a3eaad8e062d9ee8
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6890839883900034927}
+  - {fileID: 5429144737151391126}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &-7427917538670001114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/Counter_Int
+  m_EditorClassIdentifier: 
+  Name: Counter_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &-7244757680688879584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &-7226754749137289551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/Melody_Int
+  m_EditorClassIdentifier: 
+  Name: Melody_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &-6890839883900034927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Perc2/Perc2_Int
+  m_EditorClassIdentifier: 
+  Name: Perc2_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &-6083864300251644798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &-5992536214680265604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Adaptive Music
+  m_EditorClassIdentifier: 
+  Path: event:/Adaptive Music
+  guid: 348a2757fb9480418034877fda7ab123
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2780032654330695208}
+  - {fileID: 1931303365287694613}
+  - {fileID: 3881375551452965915}
+  - {fileID: 3312590905854217796}
+  - {fileID: 2077519646864063916}
+  - {fileID: 3269136227588907560}
+  - {fileID: -8175979351520052670}
+  - {fileID: 2146212198296201174}
+  - {fileID: -396108603981729779}
+  - {fileID: -540522831564512417}
+  - {fileID: 6445658556224629717}
+  - {fileID: -322038452593943953}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &-5960440252613389417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/Bass_Int
+  m_EditorClassIdentifier: 
+  Name: Bass_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &-5691128356360682350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &-5668489637390675089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_ProjectFolder/MUSI140_FMod/Build/Desktop/Master Bank.strings.bank
+  SubDir: 
+  lastModified: 637126914656213181
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1058
+  Exists: 1
+--- !u!114 &-5408253492011393510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &-5282810802547297984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Counterpoint
+  m_EditorClassIdentifier: 
+  Path: event:/Counterpoint
+  guid: 6c3b882da7745d4aac017b40464f8a3b
+  Banks:
+  - {fileID: -4821579043320235027}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4229534626353797222}
+  - {fileID: 7955846714115314943}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &-5023540862632880721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &-4985196240911542708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &-4923149743975128852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &-4821579043320235027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_ProjectFolder/MUSI140_FMod/Build/Desktop/Master Bank.bank
+  SubDir: 
+  lastModified: 637126914656167847
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4484199222900563973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/Counter_Dense
+  m_EditorClassIdentifier: 
+  Name: Counter_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &-3730494047750378933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 1/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &-3606227617355360998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &-2795677305346936971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 2/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &-2780032654330695208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Perc2_Dense
+  m_EditorClassIdentifier: 
+  Name: Perc2_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &-2684603015502114881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Perc1/Perc1_Int
+  m_EditorClassIdentifier: 
+  Name: Perc1_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &-1791678165930409130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &-760825328090010769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 2/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &-617903398437146176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 2/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &-540522831564512417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Counter_Int
+  m_EditorClassIdentifier: 
+  Name: Counter_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &-437818141501624309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &-427123009479155762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Percussion 2
+  m_EditorClassIdentifier: 
+  Path: event:/Percussion 2
+  guid: 6b48ca2bb741b0409df640130bac2b17
+  Banks:
+  - {fileID: -4821579043320235027}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8640035585152466023}
+  - {fileID: 7186354388263724826}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &-396108603981729779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Perc1_Dense
+  m_EditorClassIdentifier: 
+  Name: Perc1_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &-322038452593943953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Harmony_Dense
+  m_EditorClassIdentifier: 
+  Name: Harmony_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &-182606092784196037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/Harmony_Int
+  m_EditorClassIdentifier: 
+  Name: Harmony_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -5668489637390675089}
+  - {fileID: -4821579043320235027}
+  EditorEvents:
+  - {fileID: 5715608924255220565}
+  - {fileID: -5282810802547297984}
+  - {fileID: 1159618029501539092}
+  - {fileID: 4670055013992119415}
+  - {fileID: -427123009479155762}
+  - {fileID: 7674194908365741753}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -4821579043320235027}
+  StringsBanks:
+  - {fileID: -5668489637390675089}
+  stringsBankWriteTime: 637126914656213181
+  cacheVersion: 3
+--- !u!114 &81980634566253933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/Melody_Dense
+  m_EditorClassIdentifier: 
+  Name: Melody_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &816190267523482054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 1/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &1159618029501539092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Melody
+  m_EditorClassIdentifier: 
+  Path: event:/Melody
+  guid: 1803df619e7633429789634408703286
+  Banks:
+  - {fileID: -4821579043320235027}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5023540862632880721}
+  - {fileID: -3606227617355360998}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &1232046363095026548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_ProjectFolder/MUSI140_FMod/Build/Desktop/Master Bank.bank
+  SubDir: 
+  lastModified: 637126848366534320
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &1632838972290614220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 1/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &1890563196618680425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &1931303365287694613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Harmony_Int
+  m_EditorClassIdentifier: 
+  Name: Harmony_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &2077519646864063916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Bass_Int
+  m_EditorClassIdentifier: 
+  Name: Bass_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &2146212198296201174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Perc2_Int
+  m_EditorClassIdentifier: 
+  Name: Perc2_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &2192646178447246985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &2725916166343959751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Perc1/Perc1_Dense
+  m_EditorClassIdentifier: 
+  Name: Perc1_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &2761436455359339273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &3169435018423758306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &3217006565467367101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &3269136227588907560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Melody_Int
+  m_EditorClassIdentifier: 
+  Name: Melody_Int
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &3312590905854217796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Counter_Dense
+  m_EditorClassIdentifier: 
+  Name: Counter_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &3673609084354543512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 2/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &3727229697220105012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &3780336242000392517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &3858276550358461729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 1/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &3881375551452965915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Melody_Dense
+  m_EditorClassIdentifier: 
+  Name: Melody_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &4229534626353797222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &4306511481582600679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Perc1
+  m_EditorClassIdentifier: 
+  Path: event:/Perc1
+  guid: 743fd2fdc1f34648a1bf0d93a48d9c6d
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2684603015502114881}
+  - {fileID: 2725916166343959751}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &4670055013992119415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Harmony
+  m_EditorClassIdentifier: 
+  Path: event:/Harmony
+  guid: 123c9aa2cec8bf49b4dc17e06f03cbbe
+  Banks:
+  - {fileID: -4821579043320235027}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8037131086978214689}
+  - {fileID: -5691128356360682350}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &5429144737151391126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Perc2/Perc2_Dense
+  m_EditorClassIdentifier: 
+  Name: Perc2_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &5715608924255220565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bass
+  m_EditorClassIdentifier: 
+  Path: event:/Bass
+  guid: 65fd40cc6313224597898dd67d938d86
+  Banks:
+  - {fileID: -4821579043320235027}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -4985196240911542708}
+  - {fileID: 1890563196618680425}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &6247786631571115494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 1/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &6445658556224629717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Adaptive Music/Bass_Dense
+  m_EditorClassIdentifier: 
+  Name: Bass_Dense
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &6568667243642988423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &6905857896226493622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_ProjectFolder/MUSI140_FMod/Build/Desktop/Master Bank.bank
+  SubDir: 
+  lastModified: 637126910856072061
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &6933746173726961871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &7186354388263724826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 2/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &7315574616132527564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &7595144966009342615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_ProjectFolder/MUSI140_FMod/Build/Desktop/Master Bank.bank
+  SubDir: 
+  lastModified: 637126906949349502
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &7674194908365741753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Percussion 1
+  m_EditorClassIdentifier: 
+  Path: event:/Percussion 1
+  guid: ebcb4906a3fe5f49b3d59d96e0e17847
+  Banks:
+  - {fileID: -4821579043320235027}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1632838972290614220}
+  - {fileID: 6247786631571115494}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &7955846714115314943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &8037131086978214689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &8176036348814914699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &8797804435544811482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 1/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
