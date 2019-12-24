@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{f15a0e89-1aa7-4e2c-b7a5-bfa8673edaf3}">
+		<property name="assetPath">
+			<value>Ambient/sci-fi_electric_pulse_power_down/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3ae6facf-14b1-4490-80e6-e747faad5da8}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{44a676b8-39c1-405c-bbe9-a6b66db4647c}">
+		<property name="assetPath">
+			<value>Ambient/sci-fi_driod_robot_emote/sci-fi_driod_robot_emote_16.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.81000000000000005</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3ae6facf-14b1-4490-80e6-e747faad5da8}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{e0590a3f-91a7-45c4-a012-d5b4b51d6277}">
+		<property name="assetPath">
+			<value>Ambient/sci-fi_weapon_rifle/sci-fi_weapon_rifle_laser_shot_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.8622083333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3ae6facf-14b1-4490-80e6-e747faad5da8}</destination>
+		</relationship>
+	</object>
+</objects>

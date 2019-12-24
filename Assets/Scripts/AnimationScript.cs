@@ -69,7 +69,7 @@ public class AnimationScript : MonoBehaviour
             maxScale = new Vector3(maxScaleValue, maxScaleValue, minScaleZ);
             StartCoroutine(ButtonResize());
         }
-        else
+        else if (!masterControlScript.playBack)
         {
             StopCoroutine(ButtonResize());
         }

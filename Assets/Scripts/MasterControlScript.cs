@@ -18,6 +18,7 @@ public class MasterControlScript : MonoBehaviour
     List<Button> parameterButtons = new List<Button>();
     List<CanvasGroup> canvasGroups = new List<CanvasGroup>();
     List<GameObject> objectList = new List<GameObject>();
+    SoundControl soundControl;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,8 @@ public class MasterControlScript : MonoBehaviour
 
     void SetValues()
     {
+        soundControl = FindObjectOfType<SoundControl>();
+
         playBack = false;
         disabledParameter = "None";
         musicGroup = musicMenu.GetComponent<CanvasGroup>();

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{895f4bbf-2a9c-42e1-82d4-013e9110bd83}">
+		<property name="assetPath">
+			<value>Ambient/metal_low_creaking_ship_structure/metal_low_creaking_ship_structure_12.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.4780208333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3ae6facf-14b1-4490-80e6-e747faad5da8}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -403,7 +403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5711485
 Transform:
   m_ObjectHideFlags: 0
@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1737d5765d6738143a0fce8124628b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parameterName: 
+  parameterName: Ambience 2
   volumeParameter: 0
   densityParameter: 0
   nameObject: {fileID: 723421134}
@@ -460,8 +460,8 @@ MonoBehaviour:
   volumeDown: {fileID: 146888542}
   densityUp: {fileID: 896877057}
   densityDown: {fileID: 95448258}
-  masterStart: {fileID: 0}
-  masterStop: {fileID: 0}
+  masterStart: {fileID: 600505443}
+  masterStop: {fileID: 1129774669}
 --- !u!1 &25716343
 GameObject:
   m_ObjectHideFlags: 0
@@ -7787,7 +7787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &638335519
 Transform:
   m_ObjectHideFlags: 0
@@ -7834,7 +7834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1737d5765d6738143a0fce8124628b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parameterName: 
+  parameterName: Ambience 4
   volumeParameter: 0
   densityParameter: 0
   nameObject: {fileID: 1174164492}
@@ -7844,8 +7844,8 @@ MonoBehaviour:
   volumeDown: {fileID: 2075196671}
   densityUp: {fileID: 1401592614}
   densityDown: {fileID: 184801217}
-  masterStart: {fileID: 0}
-  masterStop: {fileID: 0}
+  masterStart: {fileID: 600505443}
+  masterStop: {fileID: 1129774669}
 --- !u!1 &649354641
 GameObject:
   m_ObjectHideFlags: 0
@@ -8129,7 +8129,6 @@ GameObject:
   - component: {fileID: 676357283}
   - component: {fileID: 676357285}
   - component: {fileID: 676357284}
-  - component: {fileID: 676357286}
   m_Layer: 5
   m_Name: MP4
   m_TagString: Music
@@ -8195,29 +8194,6 @@ MonoBehaviour:
   densityDown: {fileID: 1030765528}
   masterStart: {fileID: 600505443}
   masterStop: {fileID: 1129774669}
---- !u!114 &676357286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676357282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Bass
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 1
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &677328749
 GameObject:
   m_ObjectHideFlags: 0
@@ -12179,7 +12155,6 @@ GameObject:
   - component: {fileID: 955989293}
   - component: {fileID: 955989295}
   - component: {fileID: 955989294}
-  - component: {fileID: 955989296}
   m_Layer: 5
   m_Name: MP6
   m_TagString: Music
@@ -12245,29 +12220,6 @@ MonoBehaviour:
   densityDown: {fileID: 1006610949}
   masterStart: {fileID: 600505443}
   masterStop: {fileID: 1129774669}
---- !u!114 &955989296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955989292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Percussion 2
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 1
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &962795980
 GameObject:
   m_ObjectHideFlags: 0
@@ -14683,7 +14635,6 @@ GameObject:
   - component: {fileID: 1160125049}
   - component: {fileID: 1160125051}
   - component: {fileID: 1160125050}
-  - component: {fileID: 1160125052}
   m_Layer: 5
   m_Name: MP3
   m_TagString: Music
@@ -14749,29 +14700,6 @@ MonoBehaviour:
   densityDown: {fileID: 1255640391}
   masterStart: {fileID: 600505443}
   masterStop: {fileID: 1129774669}
---- !u!114 &1160125052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1160125048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Harmony
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 1
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &1167594730
 GameObject:
   m_ObjectHideFlags: 0
@@ -19108,7 +19036,6 @@ GameObject:
   - component: {fileID: 1511524015}
   - component: {fileID: 1511524017}
   - component: {fileID: 1511524016}
-  - component: {fileID: 1511524018}
   m_Layer: 5
   m_Name: MP2
   m_TagString: Music
@@ -19174,29 +19101,6 @@ MonoBehaviour:
   densityDown: {fileID: 1884394761}
   masterStart: {fileID: 600505443}
   masterStop: {fileID: 1129774669}
---- !u!114 &1511524018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511524014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Counterpoint
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 1
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &1539497012
 GameObject:
   m_ObjectHideFlags: 0
@@ -22177,6 +22081,8 @@ GameObject:
   - component: {fileID: 1794111868}
   - component: {fileID: 1794111871}
   - component: {fileID: 1794111872}
+  - component: {fileID: 1794111873}
+  - component: {fileID: 1794111874}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -22322,6 +22228,35 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794111867}
   m_Enabled: 1
+--- !u!114 &1794111873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794111867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3c5731006f0d1418630d1aab6c8409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameCamera: {fileID: 0}
+--- !u!54 &1794111874
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794111867}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1796879396
 GameObject:
   m_ObjectHideFlags: 0
@@ -22371,7 +22306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1797814190
 Transform:
   m_ObjectHideFlags: 0
@@ -22418,7 +22353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1737d5765d6738143a0fce8124628b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parameterName: 
+  parameterName: Ambience 1
   volumeParameter: 0
   densityParameter: 0
   nameObject: {fileID: 1370945693}
@@ -22428,8 +22363,8 @@ MonoBehaviour:
   volumeDown: {fileID: 1234502713}
   densityUp: {fileID: 724517412}
   densityDown: {fileID: 1716109860}
-  masterStart: {fileID: 0}
-  masterStop: {fileID: 0}
+  masterStart: {fileID: 600505443}
+  masterStop: {fileID: 1129774669}
 --- !u!1 &1832751052
 GameObject:
   m_ObjectHideFlags: 0
@@ -22622,7 +22557,6 @@ GameObject:
   - component: {fileID: 1836021304}
   - component: {fileID: 1836021307}
   - component: {fileID: 1836021306}
-  - component: {fileID: 1836021305}
   m_Layer: 5
   m_Name: MP1
   m_TagString: Music
@@ -22648,29 +22582,6 @@ Transform:
   m_Father: {fileID: 864367100}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1836021305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836021303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Melody
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 1
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!54 &1836021306
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22803,7 +22714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1852040806
 Transform:
   m_ObjectHideFlags: 0
@@ -22850,7 +22761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1737d5765d6738143a0fce8124628b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parameterName: 
+  parameterName: Ambience 3
   volumeParameter: 0
   densityParameter: 0
   nameObject: {fileID: 2381920}
@@ -22860,8 +22771,8 @@ MonoBehaviour:
   volumeDown: {fileID: 157922733}
   densityUp: {fileID: 1715205568}
   densityDown: {fileID: 1685421213}
-  masterStart: {fileID: 0}
-  masterStop: {fileID: 0}
+  masterStart: {fileID: 600505443}
+  masterStop: {fileID: 1129774669}
 --- !u!1 &1854742463
 GameObject:
   m_ObjectHideFlags: 0
@@ -24779,7 +24690,6 @@ GameObject:
   - component: {fileID: 1997129581}
   - component: {fileID: 1997129583}
   - component: {fileID: 1997129582}
-  - component: {fileID: 1997129584}
   m_Layer: 5
   m_Name: MP5
   m_TagString: Music
@@ -24845,29 +24755,6 @@ MonoBehaviour:
   densityDown: {fileID: 257855056}
   masterStart: {fileID: 600505443}
   masterStop: {fileID: 1129774669}
---- !u!114 &1997129584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997129580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Percussion 1
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 1
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &2008977371
 GameObject:
   m_ObjectHideFlags: 0

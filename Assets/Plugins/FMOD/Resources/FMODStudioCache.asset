@@ -17,6 +17,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &-8950690826153107628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &-8640035585152466023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30,6 +47,40 @@ MonoBehaviour:
   m_Name: parameter:/Percussion 2/LocalIntensity
   m_EditorClassIdentifier: 
   Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &-8586903515211799139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Traffic/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &-8205655655529626969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DroidEmotes/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
   Min: 0
   Max: 11
   Default: 0
@@ -68,6 +119,40 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &-7951868014159234135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &-7797156954313878783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Traffic/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &-7689310505482754612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +245,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 1
+--- !u!114 &-6267872613285298996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
 --- !u!114 &-6083864300251644798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,11 +361,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD_ProjectFolder/MUSI140_FMod/Build/Desktop/Master Bank.strings.bank
   SubDir: 
-  lastModified: 637126914656213181
+  lastModified: 637127820931913338
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1058
+    Value: 1258
+  Exists: 1
+--- !u!114 &-5620820439276127973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_ProjectFolder/MUSI140_FMod/Build/Desktop/Master Bank.bank
+  SubDir: 
+  lastModified: 637127820931723791
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5549714585056301922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DroidEmotes/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
   Exists: 1
 --- !u!114 &-5408253492011393510
 MonoBehaviour:
@@ -282,6 +419,23 @@ MonoBehaviour:
   Max: 11
   Default: 0
   Exists: 0
+--- !u!114 &-5362711634646436223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Traffic/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &-5282810802547297984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,8 +450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Counterpoint
   guid: 6c3b882da7745d4aac017b40464f8a3b
-  Banks:
-  - {fileID: -4821579043320235027}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -307,6 +460,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14769
+--- !u!114 &-5059097784955345944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DroidEmotes/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &-5023540862632880721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,7 +545,7 @@ MonoBehaviour:
   lastModified: 637126914656167847
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4484199222900563973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,6 +561,48 @@ MonoBehaviour:
   Name: Counter_Dense
   Min: 0
   Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &-4441210470755474679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Melody
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Melody
+  guid: 1803df619e7633429789634408703286
+  Banks:
+  - {fileID: -5620820439276127973}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5638730075629363827}
+  - {fileID: 4924485710668419165}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &-4013045707538788479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
   Default: 0
   Exists: 0
 --- !u!114 &-3730494047750378933
@@ -423,6 +635,40 @@ MonoBehaviour:
   m_Name: parameter:/Melody/LocalDensity
   m_EditorClassIdentifier: 
   Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &-3479199926710905369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 2/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &-3453251453576492233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
   Min: 0
   Max: 11
   Default: 0
@@ -478,6 +724,133 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 1
+--- !u!114 &-2536095155608549327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_ProjectFolder/MUSI140_FMod/Build/Desktop/Master Bank.bank
+  SubDir: 
+  lastModified: 637127819585596286
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-2101759525421405750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient Loops/DroidEmotes
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient Loops/DroidEmotes
+  guid: ea3ac43092e29942aea4d4f61b10aa60
+  Banks:
+  - {fileID: -5620820439276127973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5549714585056301922}
+  - {fileID: -5059097784955345944}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30000
+--- !u!114 &-2056528158723007328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Percussion 2
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Percussion 2
+  guid: 6b48ca2bb741b0409df640130bac2b17
+  Banks:
+  - {fileID: -5620820439276127973}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8495893594191682600}
+  - {fileID: -3479199926710905369}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &-1973513352174900443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 1/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &-1912708903618204471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient Loops/Traffic
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient Loops/Traffic
+  guid: 6af4ad0d1349c8439339739d866b90e8
+  Banks:
+  - {fileID: -5620820439276127973}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1859394525265379308}
+  - {fileID: -7797156954313878783}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 30000
+--- !u!114 &-1859394525265379308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Traffic/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &-1791678165930409130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,6 +868,23 @@ MonoBehaviour:
   Max: 11
   Default: 0
   Exists: 0
+--- !u!114 &-1697703573566034655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Combat/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &-760825328090010769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,8 +967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Percussion 2
   guid: 6b48ca2bb741b0409df640130bac2b17
-  Banks:
-  - {fileID: -4821579043320235027}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -653,21 +1042,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -5668489637390675089}
-  - {fileID: -4821579043320235027}
+  - {fileID: -5620820439276127973}
   EditorEvents:
-  - {fileID: 5715608924255220565}
-  - {fileID: -5282810802547297984}
-  - {fileID: 1159618029501539092}
-  - {fileID: 4670055013992119415}
-  - {fileID: -427123009479155762}
-  - {fileID: 7674194908365741753}
+  - {fileID: 6832475232334428870}
+  - {fileID: -4441210470755474679}
+  - {fileID: 6430262918489814775}
+  - {fileID: -2056528158723007328}
+  - {fileID: 5795983207820789375}
+  - {fileID: 2104298062651782513}
+  - {fileID: 9007936682252298443}
+  - {fileID: -1912708903618204471}
+  - {fileID: 3482490304313455629}
+  - {fileID: -2101759525421405750}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -4821579043320235027}
+  - {fileID: -5620820439276127973}
   StringsBanks:
   - {fileID: -5668489637390675089}
-  stringsBankWriteTime: 637126914656213181
+  stringsBankWriteTime: 637127820931913338
   cacheVersion: 3
+--- !u!114 &13605832561994391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience Loop/Combat
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience Loop/Combat
+  guid: 2df219e4e29416458f9f06912ee12d56
+  Banks: []
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2712921560975598678}
+  - {fileID: -1697703573566034655}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 31118
+--- !u!114 &47832677648691810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Voiceover/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &81980634566253933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,6 +1119,47 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &149151161972373145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience Loop/Voiceover
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience Loop/Voiceover
+  guid: cd492ec3b3c2d4458b99511e0263fce4
+  Banks: []
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 47832677648691810}
+  - {fileID: 467946371651248277}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30000
+--- !u!114 &467946371651248277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Voiceover/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &816190267523482054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,6 +1177,40 @@ MonoBehaviour:
   Max: 11
   Default: 0
   Exists: 0
+--- !u!114 &872306091817918163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harmony/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &926781983835430382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Combat/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &1159618029501539092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,8 +1225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Melody
   guid: 1803df619e7633429789634408703286
-  Banks:
-  - {fileID: -4821579043320235027}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -745,6 +1253,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &1532326509312195071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 2/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
 --- !u!114 &1632838972290614220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,6 +1287,23 @@ MonoBehaviour:
   Max: 11
   Default: 0
   Exists: 1
+--- !u!114 &1856226809289705138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 2/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
 --- !u!114 &1890563196618680425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,6 +1355,31 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 1
+--- !u!114 &2104298062651782513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Percussion 1
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Percussion 1
+  guid: ebcb4906a3fe5f49b3d59d96e0e17847
+  Banks:
+  - {fileID: -5620820439276127973}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1973513352174900443}
+  - {fileID: 8689849249452220875}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
 --- !u!114 &2146212198296201174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,6 +1414,47 @@ MonoBehaviour:
   Max: 11
   Default: 0
   Exists: 0
+--- !u!114 &2561381884750590949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience Loop/Traffic
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience Loop/Traffic
+  guid: 6af4ad0d1349c8439339739d866b90e8
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8586903515211799139}
+  - {fileID: -5362711634646436223}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 30000
+--- !u!114 &2712921560975598678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Combat/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &2725916166343959751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,6 +1506,23 @@ MonoBehaviour:
   Max: 11
   Default: 0
   Exists: 0
+--- !u!114 &3186538445725883765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Voiceover/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &3217006565467367101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -949,6 +1574,31 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 1
+--- !u!114 &3482490304313455629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient Loops/Voiceover
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient Loops/Voiceover
+  guid: cd492ec3b3c2d4458b99511e0263fce4
+  Banks:
+  - {fileID: -5620820439276127973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3186538445725883765}
+  - {fileID: 6449554375915014015}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30000
 --- !u!114 &3673609084354543512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,6 +1684,40 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 1
+--- !u!114 &3941763872849945533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Combat/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &3993436802861606691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 1/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
 --- !u!114 &4229534626353797222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1089,8 +1773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Harmony
   guid: 123c9aa2cec8bf49b4dc17e06f03cbbe
-  Banks:
-  - {fileID: -4821579043320235027}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1100,6 +1783,64 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14769
+--- !u!114 &4704492205980450418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &4924485710668419165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &5035481697390529853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience Loop/DroidEmotes
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience Loop/DroidEmotes
+  guid: ea3ac43092e29942aea4d4f61b10aa60
+  Banks: []
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8205655655529626969}
+  - {fileID: 7130162596381227313}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30000
 --- !u!114 &5429144737151391126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,6 +1858,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 1
+--- !u!114 &5638730075629363827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &5715608924255220565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1131,8 +1889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Bass
   guid: 65fd40cc6313224597898dd67d938d86
-  Banks:
-  - {fileID: -4821579043320235027}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1142,6 +1899,48 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14769
+--- !u!114 &5795983207820789375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Counterpoint
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Counterpoint
+  guid: 6c3b882da7745d4aac017b40464f8a3b
+  Banks:
+  - {fileID: -5620820439276127973}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6501258888035767948}
+  - {fileID: 4704492205980450418}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
+--- !u!114 &5959567679886068379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
 --- !u!114 &6247786631571115494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1159,6 +1958,31 @@ MonoBehaviour:
   Max: 11
   Default: 0
   Exists: 1
+--- !u!114 &6430262918489814775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Bass
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Bass
+  guid: 65fd40cc6313224597898dd67d938d86
+  Banks:
+  - {fileID: -5620820439276127973}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3453251453576492233}
+  - {fileID: 7079607183508639855}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
 --- !u!114 &6445658556224629717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1174,6 +1998,40 @@ MonoBehaviour:
   Name: Bass_Dense
   Min: 0
   Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &6449554375915014015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Voiceover/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &6501258888035767948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
   Default: 0
   Exists: 1
 --- !u!114 &6568667243642988423
@@ -1193,6 +2051,48 @@ MonoBehaviour:
   Max: 11
   Default: 0
   Exists: 0
+--- !u!114 &6671662511863631077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Counterpoint/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &6832475232334428870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Harmony
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Harmony
+  guid: 123c9aa2cec8bf49b4dc17e06f03cbbe
+  Banks:
+  - {fileID: -5620820439276127973}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7951868014159234135}
+  - {fileID: -8950690826153107628}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14769
 --- !u!114 &6905857896226493622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1228,6 +2128,57 @@ MonoBehaviour:
   Max: 11
   Default: 0
   Exists: 0
+--- !u!114 &6960849540942223130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &7079607183508639855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &7130162596381227313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DroidEmotes/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &7186354388263724826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,8 +2245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Percussion 1
   guid: ebcb4906a3fe5f49b3d59d96e0e17847
-  Banks:
-  - {fileID: -4821579043320235027}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1305,6 +2255,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14769
+--- !u!114 &7735589780885017868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 1/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
 --- !u!114 &7955846714115314943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1356,6 +2323,40 @@ MonoBehaviour:
   Max: 11
   Default: 0
   Exists: 0
+--- !u!114 &8495893594191682600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 2/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
+--- !u!114 &8689849249452220875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Percussion 1/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 1
 --- !u!114 &8797804435544811482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1367,6 +2368,65 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Percussion 1/LocalDensity
+  m_EditorClassIdentifier: 
+  Name: LocalDensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &8990604562033422509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody/LocalIntensity
+  m_EditorClassIdentifier: 
+  Name: LocalIntensity
+  Min: 0
+  Max: 11
+  Default: 0
+  Exists: 0
+--- !u!114 &9007936682252298443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient Loops/Combat
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient Loops/Combat
+  guid: 2df219e4e29416458f9f06912ee12d56
+  Banks:
+  - {fileID: -5620820439276127973}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 926781983835430382}
+  - {fileID: 3941763872849945533}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 31118
+--- !u!114 &9101315233130812478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/LocalDensity
   m_EditorClassIdentifier: 
   Name: LocalDensity
   Min: 0

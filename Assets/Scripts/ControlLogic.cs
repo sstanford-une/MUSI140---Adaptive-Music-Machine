@@ -8,13 +8,13 @@ using FMODUnity;
 
 public class ControlLogic : MonoBehaviour
 {
-    private FMOD.Studio.EventInstance instance;
-    [FMODUnity.EventRef] public string parameterName;
+    public string parameterName;
     [Range(0f, 10f)] public float volumeParameter, densityParameter;
     public GameObject nameObject, volumeObject, densityObject;
     public Button volumeUp, volumeDown, densityUp, densityDown, masterStart, masterStop;
     TextMeshProUGUI nameText, volumeText, densityText;
     MasterControlScript masterControlScript;
+    SoundControl soundControl;
     int paramTotal;
 
     // Start is called before the first frame update
@@ -32,6 +32,7 @@ public class ControlLogic : MonoBehaviour
     void SetValues()
     {
         masterControlScript = FindObjectOfType<MasterControlScript>();
+        soundControl = FindObjectOfType<SoundControl>();
 
         volumeUp.onClick.AddListener(IncreaseVolume);
         volumeDown.onClick.AddListener(DecreaseVolume);
@@ -53,7 +54,7 @@ public class ControlLogic : MonoBehaviour
     {
         volumeParameter = Mathf.Clamp((volumeParameter += 1), 0f, 10f);
         volumeText.text = (volumeParameter * 10) + "%";
-        instance.setParameterByName("LocalIntensity", volumeParameter);
+        ParameterUpdate();
         switch (gameObject.tag)
         {
             case "Music":
@@ -69,7 +70,7 @@ public class ControlLogic : MonoBehaviour
     {
         volumeParameter = Mathf.Clamp((volumeParameter -= 1), 0f, 10f);
         volumeText.text = (volumeParameter * 10) + "%";
-        instance.setParameterByName("LocalIntensity", volumeParameter);
+        ParameterUpdate();
         switch (gameObject.tag)
         {
             case "Music":
@@ -85,7 +86,7 @@ public class ControlLogic : MonoBehaviour
     {
         densityParameter = Mathf.Clamp((densityParameter += 1), 0f, 10f);
         densityText.text = (densityParameter * 10) + "%";
-        instance.setParameterByName("LocalDensity", volumeParameter);
+        ParameterUpdate();
         switch (gameObject.tag)
         {
             case "Music":
@@ -101,7 +102,7 @@ public class ControlLogic : MonoBehaviour
     {
         densityParameter = Mathf.Clamp((densityParameter -= 1), 0f, 10f);
         densityText.text = (densityParameter * 10) + "%";
-        instance.setParameterByName("LocalDensity", volumeParameter);
+        ParameterUpdate();
         switch (gameObject.tag)
         {
             case "Music":
@@ -115,11 +116,58 @@ public class ControlLogic : MonoBehaviour
 
     void StartPlayback()
     {
-        instance.start();
+        //instance.start();
     }
 
     void StopPlayback()
     {
-        //instance.stop();
+        //instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+
+    void ParameterUpdate()
+    {
+        switch (parameterName)
+        {
+            case "Melody":
+                soundControl.Melody.setParameterByName("localDensity", densityParameter);
+                soundControl.Melody.setParameterByName("localIntensity", volumeParameter);
+                break;
+            case "Counterpoint":
+                soundControl.Counterpoint.setParameterByName("localDensity", densityParameter);
+                soundControl.Counterpoint.setParameterByName("localIntensity", volumeParameter);
+                break;
+            case "Harmony":
+                soundControl.Harmony.setParameterByName("localDensity", densityParameter);
+                soundControl.Harmony.setParameterByName("localIntensity", volumeParameter);
+                break;
+            case "Bass":
+                soundControl.Bass.setParameterByName("localDensity", densityParameter);
+                soundControl.Bass.setParameterByName("localIntensity", volumeParameter);
+                break;
+            case "Percussion 1":
+                soundControl.PercussionOne.setParameterByName("localDensity", densityParameter);
+                soundControl.PercussionOne.setParameterByName("localIntensity", volumeParameter);
+                break;
+            case "Percussion 2":
+                soundControl.PercussionTwo.setParameterByName("localDensity", densityParameter);
+                soundControl.PercussionTwo.setParameterByName("localIntensity", volumeParameter);
+                break;
+            case "Ambience 1":
+                soundControl.AmbienceOne.setParameterByName("localDensity", densityParameter);
+                soundControl.AmbienceOne.setParameterByName("localIntensity", volumeParameter);
+                break;
+            case "Ambience 2":
+                soundControl.AmbienceTwo.setParameterByName("localDensity", densityParameter);
+                soundControl.AmbienceTwo.setParameterByName("localIntensity", volumeParameter);
+                break;
+            case "Ambience 3":
+                soundControl.AmbienceThree.setParameterByName("localDensity", densityParameter);
+                soundControl.AmbienceThree.setParameterByName("localIntensity", volumeParameter);
+                break;
+            case "Ambience 4":
+                soundControl.AmbienceFour.setParameterByName("localDensity", densityParameter);
+                soundControl.AmbienceFour.setParameterByName("localIntensity", volumeParameter);
+                break;
+        }
     }
 }
