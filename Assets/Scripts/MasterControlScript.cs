@@ -15,16 +15,17 @@ public class MasterControlScript : MonoBehaviour
     Toggle musicToggle, ambientToggle;
     public Button playButton, stopButton;
     public float masterMusicVolume, masterMusicDensity, masterAmbientVolume, masterAmbientDensity;
-    List<Button> parameterButtons = new List<Button>();
-    List<CanvasGroup> canvasGroups = new List<CanvasGroup>();
-    List<GameObject> objectList = new List<GameObject>();
     SoundControl soundControl;
+    FMOD.Studio.Bus masterSwitchBus;
+    public GameObject[] presetControl = new GameObject[6];
+    ControlLogic[] controlLogicArray = new ControlLogic[6];
+    int[] volumePreset = new int[6];
+    int[] densityPreset = new int[6];
 
     // Start is called before the first frame update
     void Start()
     {
         SetValues();
-        //GatherButtons();
     }
 
     // Update is called once per frame
@@ -36,6 +37,7 @@ public class MasterControlScript : MonoBehaviour
     void SetValues()
     {
         soundControl = FindObjectOfType<SoundControl>();
+        SetPresets();
 
         playBack = false;
         disabledParameter = "None";
@@ -44,6 +46,8 @@ public class MasterControlScript : MonoBehaviour
         musicToggle = musicSwitch.GetComponent<Toggle>();
         ambientToggle = ambientSwitch.GetComponent<Toggle>();
 
+        masterSwitchBus = FMODUnity.RuntimeManager.GetBus("Bus:/MasterSwitch");
+        masterSwitchBus.setMute(true);
         playButton.onClick.AddListener(StartPlayback);
         stopButton.onClick.AddListener(StopPlayback);
         musicToggle.onValueChanged.AddListener(delegate { ViewToggle(); });
@@ -53,12 +57,13 @@ public class MasterControlScript : MonoBehaviour
     void StartPlayback()
     {
         playBack = true;
+        masterSwitchBus.setMute(false);
     }
 
     void StopPlayback()
     {
         playBack = false;
-        StopAllCoroutines();
+        masterSwitchBus.setMute(true);
     }
 
     void ViewToggle()
@@ -80,33 +85,6 @@ public class MasterControlScript : MonoBehaviour
             musicGroup.blocksRaycasts = false;
             ambientGroup.blocksRaycasts = true;
             ActiveSwitch();
-        }
-    }
-
-    void GatherButtons()
-    {
-        foreach (Button paramButton in GameObject.FindObjectsOfType(typeof(Button)))
-        {
-            switch(paramButton.tag)
-            {
-                case "Music":
-                    parameterButtons.Add(paramButton);
-                    break;
-                case "Ambient":
-                    parameterButtons.Add(paramButton);
-                    break;
-                case "Menu":
-                    break;
-            }
-        }
-        UnityEngine.Debug.Log(parameterButtons.Count);
-    }
-
-    void GatherObjects()
-    {
-        foreach (CanvasGroup canvasGroup in GameObject.FindObjectsOfType(typeof(CanvasGroup)))
-        {
-            canvasGroups.Add(canvasGroup);
         }
     }
 
@@ -132,6 +110,28 @@ public class MasterControlScript : MonoBehaviour
             fadeOutTarget.alpha -= Time.deltaTime * 0.9f;
             yield return null;
         }
+    }
+
+    void SetPresets()
+    {
+        for (int p = 0; p < presetControl.Length; p++)
+        {
+            controlLogicArray[p] = presetControl[p].GetComponent<ControlLogic>();
+        }
+    }
+
+    void ActivatePresets(string preset)
+    {
+        for (int p = 0; p < controlLogicArray.Length; p++)
+        {
+            controlLogicArray[p].volumeParameter = 1;
+            controlLogicArray[p].densityParameter = 1;
+        }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
 

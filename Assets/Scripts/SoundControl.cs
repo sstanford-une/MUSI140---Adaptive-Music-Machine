@@ -59,21 +59,4 @@ public class SoundControl : MonoBehaviour
         AmbienceThree.start();
         AmbienceFour.start();
     }
-
-    void StopPlayback()
-    {
-        //Music Stop
-        Melody.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        Counterpoint.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        Harmony.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        Bass.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        PercussionOne.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        PercussionTwo.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-
-        //Ambient Lopp Stop
-        AmbienceFour.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        AmbienceTwo.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        AmbienceThree.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        AmbienceFour.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-    }
 }

@@ -152,19 +152,19 @@ public class ControlLogic : MonoBehaviour
                 soundControl.PercussionTwo.setParameterByName("localDensity", densityParameter);
                 soundControl.PercussionTwo.setParameterByName("localIntensity", volumeParameter);
                 break;
-            case "Ambience 1":
+            case "Traffic":
                 soundControl.AmbienceOne.setParameterByName("localDensity", densityParameter);
                 soundControl.AmbienceOne.setParameterByName("localIntensity", volumeParameter);
                 break;
-            case "Ambience 2":
+            case "Speakers":
                 soundControl.AmbienceTwo.setParameterByName("localDensity", densityParameter);
                 soundControl.AmbienceTwo.setParameterByName("localIntensity", volumeParameter);
                 break;
-            case "Ambience 3":
+            case "Droids":
                 soundControl.AmbienceThree.setParameterByName("localDensity", densityParameter);
                 soundControl.AmbienceThree.setParameterByName("localIntensity", volumeParameter);
                 break;
-            case "Ambience 4":
+            case "Combat":
                 soundControl.AmbienceFour.setParameterByName("localDensity", densityParameter);
                 soundControl.AmbienceFour.setParameterByName("localIntensity", volumeParameter);
                 break;
